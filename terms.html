@@ -3,117 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - LearnReader</title>
+    <meta name="description" content="Terms of Use for the LearnReader application.">
+    <link rel="canonical" href="https://legal.learnreaderapp.com/terms.html">
+    <title>Terms of Use - LearnReader</title>
     <style>
+        :root {
+            color-scheme: light dark;
+            --background: #f5f5f7;
+            --surface: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --accent: #007aff;
+            --border: rgba(0, 0, 0, 0.08);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #000000;
+                --surface: #1c1c1e;
+                --text: #f5f5f7;
+                --secondary: #aeaeb2;
+                --accent: #0a84ff;
+                --border: rgba(255, 255, 255, 0.12);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 0;
             padding: 40px 20px;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--background);
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+        main {
+            width: min(100%, 860px);
+            margin: 0 auto;
+            padding: 48px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
         }
+
         h1 {
-            color: #007AFF;
-            margin-bottom: 10px;
+            margin: 0 0 8px;
+            color: var(--accent);
+            line-height: 1.2;
         }
-        .date {
-            color: #666;
-            margin-bottom: 30px;
-        }
+
         h2 {
-            color: #1d1d1f;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin: 36px 0 12px;
+            line-height: 1.3;
         }
-        ul, ol {
-            margin: 15px 0;
-            padding-left: 25px;
+
+        p, ul {
+            margin: 12px 0;
         }
+
         li {
             margin: 8px 0;
         }
+
         a {
-            color: #007AFF;
+            color: var(--accent);
+        }
+
+        .date, footer {
+            color: var(--secondary);
+        }
+
+        nav {
+            margin-bottom: 28px;
+        }
+
+        nav a + a {
+            margin-left: 18px;
+        }
+
+        footer {
+            margin-top: 44px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 0;
+            }
+
+            main {
+                padding: 28px 20px;
+                border: 0;
+                border-radius: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Terms of Service for LearnReader</h1>
-        <p class="date">Last updated: April 13, 2026</p>
-        
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, accessing, or using LearnReader ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
-        
-        <h2>2. Description of Service</h2>
-        <p>LearnReader is a language learning application that helps users learn languages through reading texts with AI-powered translation tools. The service includes:</p>
+    <main>
+        <nav aria-label="Legal documents">
+            <a href="https://legal.learnreaderapp.com/privacy.html">Privacy Policy</a>
+            <a href="https://legal.learnreaderapp.com/terms.html" aria-current="page">Terms of Use</a>
+        </nav>
+
+        <h1>Terms of Use for LearnReader</h1>
+        <p class="date">Effective and last updated: June 19, 2026</p>
+
+        <p>
+            These Terms of Use ("Terms") govern your use of the LearnReader mobile application and
+            related services (collectively, the "Service"). By downloading, accessing, purchasing,
+            or using the Service, you agree to these Terms. If you do not agree, do not use the
+            Service.
+        </p>
+
+        <h2>1. Eligibility and Accounts</h2>
+        <p>
+            You must be legally capable of entering into these Terms. If you have not reached the
+            age of legal majority where you live, your parent or legal guardian must review and
+            accept these Terms on your behalf.
+        </p>
+        <p>
+            Some features require Sign in with Apple. You are responsible for maintaining the
+            security of your Apple account and for activity performed through your LearnReader
+            account. Information provided through your account must be accurate. Notify us promptly
+            at <a href="mailto:learnreader@proton.me">learnreader@proton.me</a> if you believe your
+            account has been accessed without authorization.
+        </p>
+
+        <h2>2. The Service</h2>
+        <p>LearnReader provides language-learning tools that may include:</p>
         <ul>
-            <li>Access to reading materials in various languages</li>
-            <li>AI-powered word and sentence translations</li>
-            <li>Progress tracking and analytics</li>
-            <li>Vocabulary review system</li>
+            <li>reading and viewing user-selected books, manga, websites, and videos;</li>
+            <li>on-device text recognition and text selection;</li>
+            <li>local and AI-assisted translations and language explanations;</li>
+            <li>flashcards, review scheduling, progress tracking, and learning analytics; and</li>
+            <li>optional account-based synchronization and premium features.</li>
         </ul>
-        
-        <h2>3. Account Registration</h2>
-        <p>To access certain features, you must create an account using Apple Sign-In. You agree to:</p>
+        <p>
+            Features, limits, supported languages, and availability may change over time. The
+            current product description and purchase screen control if they differ from a general
+            description in these Terms.
+        </p>
+
+        <h2>3. AI-Generated Content</h2>
+        <p>
+            Some translations, explanations, pronunciations, and learning suggestions are generated
+            using artificial intelligence. AI output may be inaccurate, incomplete, offensive,
+            outdated, or unsuitable for a particular context. You must review important output
+            independently and must not rely on LearnReader as a substitute for professional,
+            medical, legal, financial, safety-critical, or certified translation advice.
+        </p>
+        <p>
+            Do not submit confidential, sensitive, regulated, or third-party personal information
+            for AI translation unless you have the right and a lawful basis to do so.
+        </p>
+
+        <h2>4. User Content and Third-Party Content</h2>
+        <p>
+            You retain any rights you have in content you import, select, save, or submit. You grant
+            us a limited, worldwide, non-exclusive license to host, process, transmit, reproduce,
+            and format that content only as needed to operate, secure, and improve the Service.
+        </p>
+        <p>
+            You represent that you have the necessary rights to use content with LearnReader. You
+            may not use the Service to infringe copyrights, privacy rights, contractual restrictions,
+            or other rights. LearnReader does not provide books, videos, websites, or manga merely
+            because the Service can open or interact with them, and we do not endorse or control
+            third-party content or websites.
+        </p>
+
+        <h2>5. Subscriptions, Billing, and Trials</h2>
+        <p>
+            LearnReader may offer auto-renewable subscriptions through Apple's In-App Purchase
+            system. The purchase screen displays the subscription name, duration, included service,
+            price, billing period, and any trial or introductory offer before you confirm a purchase.
+        </p>
         <ul>
-            <li>Provide accurate and complete information</li>
-            <li>Maintain the security of your account</li>
-            <li>Notify us immediately of any unauthorized use</li>
+            <li>Payment is charged to your Apple Account when you confirm the purchase.</li>
+            <li>
+                A subscription automatically renews unless you cancel it at least 24 hours before
+                the end of the current billing period.
+            </li>
+            <li>
+                Your Apple Account may be charged for renewal within 24 hours before the end of the
+                current billing period.
+            </li>
+            <li>
+                You can manage or cancel subscriptions in your
+                <a href="https://apps.apple.com/account/subscriptions" rel="noopener noreferrer">Apple subscription settings</a>.
+                Deleting LearnReader or deleting your LearnReader account does not itself cancel an
+                App Store subscription.
+            </li>
+            <li>
+                If a free trial or introductory offer is available, the purchase screen will state
+                its duration and the price charged afterward. Any unused portion may be forfeited
+                when you purchase a subscription, where permitted.
+            </li>
+            <li>
+                You can use Restore Purchases in the Service to restore eligible purchases.
+            </li>
+            <li>
+                Apple processes payments and refund requests. Refund eligibility is governed by
+                Apple's policies and applicable law. You may request a refund through
+                <a href="https://reportaproblem.apple.com/" rel="noopener noreferrer">Apple's Report a Problem service</a>.
+            </li>
         </ul>
-        
-        <h2>4. Subscriptions and Payments</h2>
-        <p>The App offers both free and premium features:</p>
-        <ul>
-            <li><strong>Free Tier:</strong> Limited access to reading materials and 5 translations per day</li>
-            <li><strong>Premium Subscription:</strong> Unlimited access with 200 AI translations per day</li>
-            <li>Subscriptions are managed through Apple App Store</li>
-            <li>Payments are processed by Apple</li>
-            <li>You can cancel your subscription at any time through your Apple ID settings</li>
-            <li>Refunds are handled according to Apple's refund policy</li>
-        </ul>
-        
-        <h2>5. User Conduct</h2>
+        <p>
+            We may change subscription offerings or prices prospectively. Apple will provide any
+            notice or consent flow required for a price increase. Changes do not affect a period
+            already paid for.
+        </p>
+
+        <h2>6. Acceptable Use</h2>
         <p>You agree not to:</p>
         <ul>
-            <li>Use the App for any illegal purpose</li>
-            <li>Reverse engineer, decompile, or disassemble the App</li>
-            <li>Share your account credentials with others</li>
-            <li>Use automated systems to access the App</li>
-            <li>Interfere with or disrupt the App's servers</li>
+            <li>use the Service for unlawful, fraudulent, abusive, or harmful activity;</li>
+            <li>submit content you do not have the right to process;</li>
+            <li>attempt to bypass usage, access, subscription, or security controls;</li>
+            <li>interfere with the Service, servers, networks, or another user's access;</li>
+            <li>use automated means to scrape, overload, or access the Service without permission;</li>
+            <li>
+                reverse engineer, decompile, or derive source code except to the extent such a
+                restriction is prohibited by applicable law or allowed by an open-source license;
+            </li>
+            <li>resell, sublicense, or commercially exploit the Service without written permission; or</li>
+            <li>use AI output to mislead others about its source, accuracy, or human authorship.</li>
         </ul>
-        
-        <h2>6. Intellectual Property</h2>
-        <p>All content, features, and functionality of the App are owned by LearnReader and are protected by copyright, trademark, and other intellectual property laws.</p>
-        
-        <h2>7. Limitation of Liability</h2>
-        <p>The App is provided "as is" and "as available" without warranties of any kind. We are not liable for:</p>
-        <ul>
-            <li>Any errors or interruptions in the service</li>
-            <li>Any loss of data or information</li>
-            <li>Any damages arising from your use of the App</li>
-        </ul>
-        
-        <h2>8. Termination</h2>
-        <p>We may terminate or suspend your access to the App at any time, without prior notice, for conduct that we believe violates these Terms or is harmful to other users or us.</p>
-        
-        <h2>9. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms at any time. We will notify you of any changes by posting the new Terms on this page. Your continued use of the App constitutes acceptance of the modified Terms.</p>
-        
-        <h2>10. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of Kazakhstan, without regard to its conflict of law provisions.</p>
-        
-        <h2>11. Contact Information</h2>
-        <p>If you have any questions about these Terms, please contact us at:</p>
-        <p><strong>Email:</strong> learnreader@proton.me</p>
-    </div>
+
+        <h2>7. Intellectual Property</h2>
+        <p>
+            The Service, including its software, design, branding, and original content, is owned by
+            LearnReader or its licensors and is protected by applicable intellectual property laws.
+            These Terms grant you only a personal, limited, non-exclusive, non-transferable,
+            revocable right to use the Service in accordance with these Terms and the App Store
+            Usage Rules.
+        </p>
+
+        <h2>8. Privacy</h2>
+        <p>
+            Our <a href="https://legal.learnreaderapp.com/privacy.html">Privacy Policy</a> explains how information is collected,
+            used, shared, and retained. It is incorporated into these Terms by reference.
+        </p>
+
+        <h2>9. Account Deletion and Termination</h2>
+        <p>
+            You may initiate account deletion from
+            <strong>Settings &gt; Account &gt; Delete Account</strong>. Account deletion does not
+            cancel an Apple subscription; cancellation must be completed in Apple subscription
+            settings.
+        </p>
+        <p>
+            You may stop using the Service at any time. We may suspend or terminate access if you
+            materially or repeatedly violate these Terms, create security or legal risk, misuse the
+            Service, or if we are required to do so by law. Where reasonable, we will provide notice
+            and an opportunity to address the issue. Provisions that by their nature should survive
+            termination will remain effective.
+        </p>
+
+        <h2>10. Changes and Availability</h2>
+        <p>
+            We may update, add, limit, suspend, or discontinue features to improve or secure the
+            Service, comply with law, or reflect technical and business changes. We do not guarantee
+            that every feature will always be available, uninterrupted, or supported on every
+            device, language, or location.
+        </p>
+        <p>
+            We may update these Terms. The updated Terms will be posted at this URL with a revised
+            effective date. Where required, we will provide additional notice or request consent.
+            Continued use after an update takes effect constitutes acceptance to the extent
+            permitted by law.
+        </p>
+
+        <h2>11. Disclaimers</h2>
+        <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICE IS PROVIDED "AS IS" AND "AS
+            AVAILABLE." WE DISCLAIM IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A
+            PARTICULAR PURPOSE, ACCURACY, QUIET ENJOYMENT, AND NON-INFRINGEMENT. WE DO NOT WARRANT
+            THAT THE SERVICE OR AI OUTPUT WILL BE ERROR-FREE, SECURE, OR UNINTERRUPTED.
+        </p>
+        <p>
+            Nothing in these Terms excludes warranties, remedies, or consumer rights that cannot be
+            excluded under applicable law.
+        </p>
+
+        <h2>12. Limitation of Liability</h2>
+        <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, LEARNREADER AND ITS SERVICE PROVIDERS WILL NOT
+            BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR
+            LOSS OF DATA, PROFITS, GOODWILL, OR BUSINESS OPPORTUNITY, ARISING FROM OR RELATED TO THE
+            SERVICE.
+        </p>
+        <p>
+            OUR TOTAL LIABILITY FOR CLAIMS RELATING TO THE SERVICE WILL NOT EXCEED THE GREATER OF
+            THE AMOUNT YOU PAID FOR THE SERVICE DURING THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO
+            THE CLAIM OR USD 50. These limitations do not apply where prohibited by law or to
+            liability that cannot legally be limited.
+        </p>
+
+        <h2>13. Apple-Specific Terms</h2>
+        <p>
+            If you obtained LearnReader through Apple's App Store, Apple is not a party to these
+            Terms and is not responsible for the Service, maintenance, support, warranties, or
+            claims relating to LearnReader. Apple and its subsidiaries are third-party beneficiaries
+            of these Terms and may enforce the Apple-specific provisions against you.
+        </p>
+        <p>
+            Unless a custom end-user license agreement is presented in App Store Connect, your
+            license to the app is also subject to Apple's
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Standard Licensed Application End User License Agreement</a>.
+            If these Terms conflict with Apple's mandatory App Store terms, those mandatory terms
+            control for your use of the iOS app.
+        </p>
+
+        <h2>14. Governing Law</h2>
+        <p>
+            These Terms are governed by the laws of Kazakhstan, without regard to conflict-of-law
+            rules. This choice does not deprive you of mandatory protections or rights available
+            under the laws of your country of residence. Any dispute forum requirement applies only
+            to the extent permitted by applicable law.
+        </p>
+
+        <h2>15. General Terms</h2>
+        <p>
+            If any provision is found unenforceable, it will be limited to the minimum extent
+            necessary and the remaining provisions will remain effective. Our failure to enforce a
+            provision is not a waiver. You may not assign these Terms without our consent; we may
+            assign them as part of a merger, acquisition, reorganization, or transfer of the
+            Service, subject to applicable law. These Terms, the Privacy Policy, and applicable
+            Apple terms form the agreement concerning your use of the Service.
+        </p>
+
+        <h2>16. Contact</h2>
+        <p>
+            Questions about these Terms may be sent to LearnReader at
+            <a href="mailto:learnreader@proton.me">learnreader@proton.me</a>.
+        </p>
+
+        <footer>
+            <p>
+                See also the <a href="https://legal.learnreaderapp.com/privacy.html">LearnReader Privacy Policy</a>.
+            </p>
+        </footer>
+    </main>
 </body>
 </html>
