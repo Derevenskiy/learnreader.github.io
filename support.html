@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Get help with LearnReader, report a bug, or share an idea."
+    >
+
+    <title>LearnReader Support</title>
+
+    <style>
+        :root {
+            color-scheme: light dark;
+            --background: #f7f5ff;
+            --card: rgba(255, 255, 255, 0.92);
+            --text: #1f1d2b;
+            --secondary-text: #696579;
+            --accent: #6957d9;
+            --accent-hover: #5846c7;
+            --border: rgba(105, 87, 217, 0.14);
+            --shadow: 0 24px 70px rgba(59, 43, 120, 0.13);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                radial-gradient(
+                    circle at top left,
+                    rgba(139, 118, 255, 0.23),
+                    transparent 40%
+                ),
+                radial-gradient(
+                    circle at bottom right,
+                    rgba(188, 169, 255, 0.2),
+                    transparent 38%
+                ),
+                var(--background);
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+            line-height: 1.6;
+        }
+
+        main {
+            width: 100%;
+            max-width: 760px;
+            padding: 48px;
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            background: var(--card);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 18px;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: rgba(105, 87, 217, 0.1);
+            color: var(--accent);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        h1 {
+            margin: 0 0 14px;
+            font-size: clamp(36px, 7vw, 56px);
+            line-height: 1.06;
+            letter-spacing: -0.04em;
+        }
+
+        .intro {
+            max-width: 600px;
+            margin: 0;
+            color: var(--secondary-text);
+            font-size: 18px;
+        }
+
+        .support-card {
+            margin-top: 32px;
+            padding: 24px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            background: rgba(105, 87, 217, 0.055);
+        }
+
+        h2 {
+            margin: 0 0 8px;
+            font-size: 21px;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        .email-button {
+            display: inline-flex;
+            margin-top: 14px;
+            padding: 12px 18px;
+            border-radius: 13px;
+            background: var(--accent);
+            color: #ffffff;
+            font-weight: 650;
+            text-decoration: none;
+            transition:
+                transform 0.15s ease,
+                background 0.15s ease;
+        }
+
+        .email-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .links a {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--secondary-text);
+            font-size: 14px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #111018;
+                --card: rgba(31, 29, 43, 0.9);
+                --text: #f5f3ff;
+                --secondary-text: #b7b2c7;
+                --accent: #a594ff;
+                --accent-hover: #b5a8ff;
+                --border: rgba(165, 148, 255, 0.18);
+                --shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+            }
+
+            body {
+                background:
+                    radial-gradient(
+                        circle at top left,
+                        rgba(105, 87, 217, 0.28),
+                        transparent 40%
+                    ),
+                    radial-gradient(
+                        circle at bottom right,
+                        rgba(94, 72, 180, 0.18),
+                        transparent 38%
+                    ),
+                    var(--background);
+            }
+
+            .support-card {
+                background: rgba(165, 148, 255, 0.07);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                align-items: flex-start;
+                padding: 16px;
+            }
+
+            main {
+                margin-top: 16px;
+                padding: 30px 22px;
+                border-radius: 22px;
+            }
+
+            .support-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="badge">LearnReader Support</div>
+
+        <h1>How can we help?</h1>
+
+        <p class="intro">
+            Get help with LearnReader, report a problem, or share an idea
+            that could make the app better.
+        </p>
+
+        <section class="support-card">
+            <h2>Contact us</h2>
+
+            <p>
+                You can report bugs and submit suggestions directly from
+                the Support section inside the LearnReader app.
+            </p>
+
+            <p>
+                If you cannot access the app, send us an email and describe
+                what happened.
+            </p>
+
+            <a
+                class="email-button"
+                href="mailto:learnreader@proton.me"
+            >
+                learnreader@proton.me
+            </a>
+        </section>
+
+        <nav class="links" aria-label="Legal links">
+            <a href="https://legal.learnreaderapp.com/privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="https://legal.learnreaderapp.com/terms.html">
+                Terms of Use
+            </a>
+        </nav>
+
+        <footer>
+            © 2026 LearnReader. All rights reserved.
+        </footer>
+    </main>
+</body>
+</html>
