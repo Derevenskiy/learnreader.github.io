@@ -117,7 +117,7 @@
         </nav>
 
         <h1>Privacy Policy for LearnReader</h1>
-        <p class="date">Effective and last updated: August 27, 2026</p>
+        <p class="date">Effective and last updated: September 8, 2026</p>
 
         <p>
             This Privacy Policy explains how LearnReader ("LearnReader," "we," "us," or "our")
@@ -157,6 +157,15 @@
                 servers so it can be synchronized across devices.
             </li>
             <li>
+                Voice-practice choices such as the target language, learner level, topic, selected
+                flashcards, and a limited excerpt from a book you choose for a lesson. During a voice
+                lesson, your audio is processed to provide the conversation and create a temporary
+                transcript. We retain the resulting structured lesson report, such as a summary,
+                strengths, corrections, useful vocabulary, and suggested next steps. For Premium
+                Plus voice lessons, up to three recent structured reports for the same target
+                language may be reused to personalize the next lesson.
+            </li>
+            <li>
                 Reading, video, manga, bookmark, and app preference data stored locally on your
                 device.
             </li>
@@ -166,7 +175,9 @@
             remain on your device and are not uploaded by LearnReader as complete files. Our server
             provides catalog metadata, such as title, author, language, source, and OPDS address,
             but does not proxy or store the ebook file. When you request an AI translation, only the
-            selected text and relevant surrounding context are transmitted for that request.
+            selected text and relevant surrounding context are transmitted for that request. When
+            you choose a book for voice practice, the app sends only a limited excerpt around your
+            current reading position, rather than the complete book.
         </p>
 
         <h3>Subscription and transaction information</h3>
@@ -175,7 +186,9 @@
             product, purchase, renewal, expiration, entitlement, transaction status, and whether a
             transaction occurred in Apple's production or sandbox testing environment. We use the
             transaction environment to keep test purchases separate from real subscription and
-            revenue reporting. We do not receive or store your full payment card details.
+            revenue reporting. This information also covers consumable translation-credit purchases
+            and the corresponding server-side credit balance. We do not receive or store your full
+            payment card details.
         </p>
 
         <h3>Feedback and support information</h3>
@@ -215,6 +228,12 @@
                 access or for advertising.
             </li>
             <li>
+                AI service usage metadata, such as provider and model name, API and prompt version,
+                cache outcome, input, cached-input, output and reasoning token counts, estimated cost,
+                success or failure status, and the time of the request. This operational record does
+                not contain the selected text, surrounding context, or generated translation.
+            </li>
+            <li>
                 App crash and non-fatal diagnostic information, such as exception or signal type,
                 affected thread, stack trace, app version and build, device model, operating-system
                 version, app state, and recent analytics breadcrumbs used to understand what happened
@@ -239,7 +258,7 @@
         <p>We use information to:</p>
         <ul>
             <li>authenticate users when they choose account-based features and maintain account security;</li>
-            <li>provide AI translations and personalized learning features;</li>
+            <li>provide AI translations, realtime voice practice, and personalized lesson reports;</li>
             <li>store and synchronize flashcards and learning progress when cloud sync is enabled;</li>
             <li>manage usage limits, subscriptions, purchases, and premium access;</li>
             <li>operate, troubleshoot, secure, analyze, and improve the Service;</li>
@@ -272,7 +291,12 @@
             <li>
                 <strong>OpenAI and Google Gemini:</strong> depending on the provider configured for
                 the Service, selected text, surrounding context, language settings, and learner level
-                may be sent to generate an AI translation.
+                may be sent to generate an AI translation. OpenAI also processes voice-practice audio,
+                lesson settings and materials, temporary transcripts, and related text needed to
+                provide realtime conversation and generate the structured lesson report. For a
+                Premium Plus lesson, OpenAI may also receive up to three recent structured lesson
+                reports for the same target language. Previous audio and full transcripts are not
+                resent for this purpose.
             </li>
             <li>
                 <strong>Infrastructure providers:</strong> hosting, database, networking, security,
@@ -333,12 +357,28 @@
                 to identify the user who submitted a request.
             </li>
             <li>
+                LearnReader does not retain voice-practice audio or the full lesson transcript on its
+                servers. A bounded transcript is held temporarily in server memory to prepare the
+                lesson report and is discarded when processing ends. The selected lesson topic,
+                flashcard material, and limited book excerpt are cleared from the voice-session record
+                after report processing finishes or the session is closed as unavailable or failed.
+                The structured lesson report and voice-usage record may be retained with the internal
+                user record to provide the feature, enforce limits, prevent abuse, and support
+                troubleshooting. Data processed by OpenAI is also subject to OpenAI's applicable
+                retention practices.
+            </li>
+            <li>
                 Detailed session and product analytics event records are retained for up to 13
                 months. Summary account activity, such as first and most recent activity, a
                 cumulative session count, and the most recently reported app and operating-system
                 versions, may be retained while the internal user record remains active. Security,
                 server, and diagnostic records are retained according to
                 operational, fraud-prevention, legal, and provider retention needs.
+            </li>
+            <li>
+                AI service usage records may be retained with the internal user record to measure
+                service cost, investigate failures, prevent abuse, and plan capacity. These records
+                contain token and request metadata rather than translation or reading content.
             </li>
             <li>
                 Feedback and support messages are retained as long as reasonably needed to review,
@@ -368,6 +408,13 @@
             does not delete your account or server-side data. Account deletion also does not
             automatically cancel an App Store subscription; subscriptions must be managed through
             your Apple account settings.
+        </p>
+        <p>
+            You can review the structured reports currently eligible to personalize voice practice
+            from <strong>AI Teacher &gt; Teacher Memory</strong>. From the same screen, you can
+            permanently clear all stored lesson reports for the selected target language. Clearing
+            teacher memory does not erase voice-usage records that are retained without lesson
+            content for billing, fraud prevention, cost control, and troubleshooting.
         </p>
         <p>
             You can also submit a privacy request or withdraw consent by emailing
