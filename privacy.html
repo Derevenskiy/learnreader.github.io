@@ -117,12 +117,14 @@
         </nav>
 
         <h1>Privacy Policy for LearnReader</h1>
-        <p class="date">Effective and last updated: September 8, 2026</p>
+        <p class="date">Last updated: November 22, 2026</p>
 
         <p>
             This Privacy Policy explains how LearnReader ("LearnReader," "we," "us," or "our")
             collects, uses, shares, retains, and protects information when you use the LearnReader
             mobile application and related services (collectively, the "Service").
+            Some features described here are available only in version 1.2 or later. The
+            information applies to the features you actually use in your installed version.
         </p>
 
         <h2>1. Information We Collect</h2>
@@ -132,12 +134,15 @@
             If you use Sign in with Apple, we receive an Apple account identifier and, if you choose
             to share them, your name and email address (which may be an Apple private relay address).
             We also create an internal LearnReader user identifier and authentication records.
-            Sign in with Apple is optional and is used for account-based features such as syncing
-            supported learning data across devices.
+            If you choose Sign in with Google, we receive your Google account identifier and the
+            email address and profile information included in the authentication response. We
+            use these identifiers to authenticate you and, if you link sign-in methods, identify
+            the same LearnReader account. Both sign-in methods are optional and enable features
+            such as syncing supported learning data across devices.
         </p>
         <p>
             You can use LearnReader and purchase subscriptions without creating a personal account.
-            When you use the Service without Sign in with Apple, we create an internal installation
+            When you use the Service without signing in, we create an internal installation
             identifier and internal user identifier to provide the Service, manage usage limits,
             maintain subscription entitlements, prevent fraud, and support restore and troubleshooting
             flows.
@@ -157,27 +162,30 @@
                 servers so it can be synchronized across devices.
             </li>
             <li>
-                Voice-practice choices such as the target language, learner level, topic, selected
-                flashcards, and a limited excerpt from a book you choose for a lesson. During a voice
-                lesson, your audio is processed to provide the conversation and create a temporary
-                transcript. We retain the resulting structured lesson report, such as a summary,
-                strengths, corrections, useful vocabulary, and suggested next steps. For Premium
-                Plus voice lessons, up to three recent structured reports for the same target
-                language may be reused to personalize the next lesson.
-            </li>
-            <li>
                 Reading, video, manga, bookmark, and app preference data stored locally on your
                 device.
             </li>
         </ul>
         <p>
-            Books, manga images, and videos that you import or download through the free book catalog
+            EPUB and PDF books, manga images, and videos that you import or download through the free book catalog
             remain on your device and are not uploaded by LearnReader as complete files. Our server
             provides catalog metadata, such as title, author, language, source, and OPDS address,
             but does not proxy or store the ebook file. When you request an AI translation, only the
-            selected text and relevant surrounding context are transmitted for that request. When
-            you choose a book for voice practice, the app sends only a limited excerpt around your
-            current reading position, rather than the complete book.
+            selected text and relevant surrounding context are transmitted for that request. Text
+            recognition on scanned PDFs, comics, images and supported video frames takes place on
+            your device. Third-party websites you open receive ordinary network information under
+            their own privacy policies. If you decide to grant a website camera or microphone
+            access, the website may receive data directly through the built-in browser under its
+            own privacy practices. LearnReader does not upload complete imported files.
+        </p>
+        <p id="ai-translation">
+            In version 1.2, before using AI translation for the first time, a one-time confirmation explains that
+            selected text, relevant context and translation languages are sent to our external AI
+            provider (OpenAI). Confirming this request explicitly enables AI translation; declining
+            leaves the on-device dictionary available.
+            You can withdraw this permission at any time in
+            <strong>Profile &gt; Translation while reading &gt; Withdraw AI translation permission</strong>.
+            Leaving it disabled does not prevent use of on-device translation and reading tools.
         </p>
 
         <h3>Subscription and transaction information</h3>
@@ -186,9 +194,9 @@
             product, purchase, renewal, expiration, entitlement, transaction status, and whether a
             transaction occurred in Apple's production or sandbox testing environment. We use the
             transaction environment to keep test purchases separate from real subscription and
-            revenue reporting. This information also covers consumable translation-credit purchases
-            and the corresponding server-side credit balance. We do not receive or store your full
-            payment card details.
+            revenue reporting. This information also covers consumable translation-credit purchases,
+            credit usage and corresponding server-side balances. We do not receive or store your
+            full payment card details.
         </p>
 
         <h3>Feedback and support information</h3>
@@ -201,6 +209,7 @@
             version, language, and time zone. Screenshots, imported files, and reading content are
             not attached automatically.
         </p>
+
 
         <h3>Usage, analytics, and technical information</h3>
         <p>We may collect:</p>
@@ -258,7 +267,7 @@
         <p>We use information to:</p>
         <ul>
             <li>authenticate users when they choose account-based features and maintain account security;</li>
-            <li>provide AI translations, realtime voice practice, and personalized lesson reports;</li>
+            <li>provide AI translations and contextual explanations;</li>
             <li>store and synchronize flashcards and learning progress when cloud sync is enabled;</li>
             <li>manage usage limits, subscriptions, purchases, and premium access;</li>
             <li>operate, troubleshoot, secure, analyze, and improve the Service;</li>
@@ -280,6 +289,9 @@
                 management, and related platform services.
             </li>
             <li>
+                <strong>Google Sign-In:</strong> optional account authentication and linking.
+            </li>
+            <li>
                 <strong>Adapty:</strong> subscription entitlement management, paywalls, purchase
                 analytics, and subscription-related support.
             </li>
@@ -289,14 +301,9 @@
                 and troubleshooting context such as analytics breadcrumbs.
             </li>
             <li>
-                <strong>OpenAI and Google Gemini:</strong> depending on the provider configured for
-                the Service, selected text, surrounding context, language settings, and learner level
-                may be sent to generate an AI translation. OpenAI also processes voice-practice audio,
-                lesson settings and materials, temporary transcripts, and related text needed to
-                provide realtime conversation and generate the structured lesson report. For a
-                Premium Plus lesson, OpenAI may also receive up to three recent structured lesson
-                reports for the same target language. Previous audio and full transcripts are not
-                resent for this purpose.
+                <strong>OpenAI:</strong> selected text, surrounding context, language settings, and learner level
+                may be sent to generate an AI translation or contextual explanation. On-device
+                translation does not send your selected text to these AI providers.
             </li>
             <li>
                 <strong>Infrastructure providers:</strong> hosting, database, networking, security,
@@ -357,17 +364,6 @@
                 to identify the user who submitted a request.
             </li>
             <li>
-                LearnReader does not retain voice-practice audio or the full lesson transcript on its
-                servers. A bounded transcript is held temporarily in server memory to prepare the
-                lesson report and is discarded when processing ends. The selected lesson topic,
-                flashcard material, and limited book excerpt are cleared from the voice-session record
-                after report processing finishes or the session is closed as unavailable or failed.
-                The structured lesson report and voice-usage record may be retained with the internal
-                user record to provide the feature, enforce limits, prevent abuse, and support
-                troubleshooting. Data processed by OpenAI is also subject to OpenAI's applicable
-                retention practices.
-            </li>
-            <li>
                 Detailed session and product analytics event records are retained for up to 13
                 months. Summary account activity, such as first and most recent activity, a
                 cumulative session count, and the most recently reported app and operating-system
@@ -381,7 +377,8 @@
                 contain token and request metadata rather than translation or reading content.
             </li>
             <li>
-                Feedback and support messages are retained as long as reasonably needed to review,
+                Feedback and support messages are
+                retained as long as reasonably needed to review,
                 respond to, troubleshoot, and improve the Service, unless a longer retention period
                 is required for legal, security, or dispute-resolution purposes.
             </li>
@@ -403,24 +400,20 @@
             <li>request data portability or appeal a privacy decision where applicable.</li>
         </ul>
         <p>
-            If you use Sign in with Apple, you can initiate account deletion in LearnReader from
-            <strong>Settings &gt; Account &gt; Delete Account</strong>. Deleting the app by itself
+            If you have a LearnReader account, you can initiate account deletion in LearnReader from
+            <strong>Profile &gt; Account &gt; Delete Account</strong> (Settings in earlier versions). Deleting the app by itself
             does not delete your account or server-side data. Account deletion also does not
             automatically cancel an App Store subscription; subscriptions must be managed through
-            your Apple account settings.
-        </p>
-        <p>
-            You can review the structured reports currently eligible to personalize voice practice
-            from <strong>AI Teacher &gt; Teacher Memory</strong>. From the same screen, you can
-            permanently clear all stored lesson reports for the selected target language. Clearing
-            teacher memory does not erase voice-usage records that are retained without lesson
-            content for billing, fraud prevention, cost control, and troubleshooting.
+            your Apple account settings. Deleting your LearnReader account permanently deletes any
+            remaining consumable translation-credit balances associated with that
+            account, subject to transaction records we must retain for legal, fraud-prevention, or
+            dispute-resolution purposes.
         </p>
         <p>
             You can also submit a privacy request or withdraw consent by emailing
             <a href="mailto:learnreader@proton.me">learnreader@proton.me</a>. We may need to verify
-            your identity before completing a request. You may manage Sign in with Apple access and
-            App Store subscriptions in your Apple account settings.
+            your identity before completing a request. You may manage Apple or Google sign-in access
+            in the corresponding account settings and App Store subscriptions in your Apple account settings.
         </p>
 
         <h2>6. Security</h2>
